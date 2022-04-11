@@ -1,0 +1,17 @@
+
+* {
+  font-family: "Open Sans", sans-serif;
+} 
+
+
+
+html {
+  --antd-wave-shadow-color: green;
+  --scroll-bar: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 5px;
+}
