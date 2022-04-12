@@ -3,12 +3,14 @@ import thunkMiddleware from 'redux-thunk'
 import {appReducer} from "./app-reducer";
 
 import {productsReducer} from "../reducers/productsReducer";
+import {categoriesReducer} from "../reducers/categoriesReducer";
 
 
 
 const rootReducer = combineReducers({
     app: appReducer,
-    userProfile: productsReducer,
+    products: productsReducer,
+    categories: categoriesReducer,
 
 })
 export const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));

@@ -1,0 +1,11 @@
+.product {
+    margin: 40px auto 0;
+    max-width: 815px;
+    width: 100%;
+}
+.add_btn {
+    margin: 20px 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}

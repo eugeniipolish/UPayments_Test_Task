@@ -1,10 +1,10 @@
 import React, {useEffect} from "react";
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.min.css';
 import './app.css';
-import {Navigate, Route, Routes, useNavigate} from 'react-router-dom'
-import {useDispatch, useSelector} from "react-redux";
+import {Navigate, Route, Routes} from 'react-router-dom'
+import { useSelector} from "react-redux";
 import {AppRootStateType} from "./store";
-import {RequestStatusType, setIsInitializedAC} from "./app-reducer";
+import {RequestStatusType} from "./app-reducer";
 import {Preloader} from "../assets/prealoder/Prealoder";
 import {message} from "antd";
 import routes from "../routes/routes";
@@ -23,11 +23,9 @@ export const App = React.memo(() => {
 
 
     return <>
-
-
         {status === 'loading' && <Preloader/>}
         <Routes>
-            {routes.map(({auth, Component, path,access, planIds}, index) => {
+            {routes.map(({auth, Component, path, access, planIds}, index) => {
                 return <Route key={index} element={<Component/>} path={path}/>
             })}
             <Route path={'*'} element={<Navigate to={"/"}/>}/>

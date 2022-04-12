@@ -1,4 +1,6 @@
 import {FC} from "react";
+import {CreateProduct} from "../pages/CreateProduct/CreateProduct";
+import {Product} from "../pages/Product/Product";
 import {Home} from "../pages/Home/Home";
 
 
@@ -6,7 +8,9 @@ import {Home} from "../pages/Home/Home";
 
 const routes: RoutesTypes = [
 
-    {path: '/', Component: Home, auth:true  },
+    {path: '/create-product', Component: CreateProduct },
+    {path: '/product/:id', Component: Product },
+    {path: '/', Component: Home  },
 
 ]
 

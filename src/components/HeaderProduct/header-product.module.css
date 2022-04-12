@@ -1,0 +1,22 @@
+
+.product_price {
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 2px #000 solid;
+    margin-top: 20px;
+}
+
+.price {
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.price_title{
+    font-size: 28px;
+    font-weight: bold;
+}
+.price_current{
+    font-size: 16px;
+    font-weight: normal;
+}
